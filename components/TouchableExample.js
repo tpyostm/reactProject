@@ -40,7 +40,7 @@ import {
           </TouchableOpacity>
   
           <TouchableWithoutFeedback
-              onPress={() => onPress('TouchableOpacity Pressed')}
+              onPress={() => onPress('TouchableFeedback Pressed')}
           >
               <View style={styles.button}>
                   <Text>TouchableWithoutFeedback</Text>
