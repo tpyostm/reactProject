@@ -5,14 +5,13 @@ import User from './components/User'
 import LotsofGreetings from './components/LotsofGreetings'
 import MyCustomTextWith from './components/MyCustomTextWith'
 import Count from './components/Count'
-import InputText from './components/InputText'
-import UserNamePassword from './components/UserNamePassword'
-
+import ButtonExample from './components/ButtonExample'
+import Touchable_Example from './components/TouchableExample'
 
 const App = () => {
   return (
     <View style={styles.container}>
-     <UserNamePassword></UserNamePassword>
+     <Touchable_Example></Touchable_Example>
     </View>
   )
 }
