@@ -2,16 +2,20 @@ import { StyleSheet, Text, View ,TextInput} from 'react-native'
 import React,{useState} from 'react'
 import { Button } from 'react-native-web';
 
-const UserNameandPassword = () => {
+const UserNamePassword = () => {
     
     const [userName, setUserName] =useState('');
     const [passWord, setPassWord] =useState('');
    
 
-    const showdata = () => {
-        alert("email" + (userName)+"\npassword:"+(passWord));
+    const checkTextInput = () => {
+        if (!userName.setUserName()) {
+            alert ('Please Enter Name');
+            return;
+        }
     };
 
+ 
     return (
     <View style={{flex:1,marginTop:20,alignItems:'center'}}>
       <TextInput
@@ -29,15 +33,16 @@ const UserNameandPassword = () => {
       />
 
         <Button 
-        checkTextInput
-        onPress = {showdata}
-         title='Click me'
+        onPress = {checkTextInput}
+         title='Submit'
         />
     </View>
   )
 }
 
-export default UserNameandPassword
+
+
+export default UserNamePassword
 
 const styles = StyleSheet.create({
     container : {
